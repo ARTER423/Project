@@ -21,12 +21,18 @@ pythonProject22/
 
 ├── deployment/          
 │   ├── environments/        
-│   │   ├── dev/            
-│   │   │   └── .env          
-│   │   ├── staging/        
+│   │   ├── dev/      
+
+│   │   │   └── .env    
+
+│   │   ├── staging/   
+
 │   │   │   └── .env
-│   │   └── prod/         
+
+│   │   └── prod/      
+
 │   │       └── .env
+
 │   ├── scripts/             
 │   │   ├── install.sh       
 │   │   ├── configure.sh     
