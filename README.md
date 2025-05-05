@@ -1,5 +1,5 @@
 # Project
-pythonProject22/ 
+pythonProject22/
 ├── static/              
 │   ├── css/
 │   │   └── styles.css
