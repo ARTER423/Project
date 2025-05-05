@@ -3,13 +3,17 @@ pythonProject22/
 
 ├── static/              
 │   ├── css/
+
 │   │   └── styles.css
 
 │   ├── js/
+
 │   │   └── script.js
 
-│   └── images/           
+│   └── images/     
+
 │       ├── panda_logo.png
+
 │       └── background.jpg
 
 ├── templates/              
