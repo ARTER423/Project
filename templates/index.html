@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Крейзи Панда</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body style="background-color: #333; color: white; font-family: sans-serif; margin: 0; padding: 0;">
+
+    <div class="hero-section" style="background-image: url('/static/images/background.jpg');">
+        <div class="header">
+            <div class="logo">
+                <img src="/static/images/logo.png" alt="Логотип" width="150">
+
+            </div>
+            <nav>
+                <a href="#">Игры</a>
+                <a href="#">Компания</a>
+                <a href="#">Вакансии</a>
+                <a href="#">Контакты</a>
+                <a href="#">Поддержка</a>
+                <select>
+                    <option>RUS</option>
+                </select>
+            </nav>
+        </div>
+
+        <div class="hero-content">
+            <h1>ETERNAL RETURN BLACK SURVIVAL</h1>
+            <p>Одна из ведущих компаний-разработчиков мобильных и социальных игр в России</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <h2>110M</h2>
+                <p>Игроков</p>
+            </div>
+            <div class="stat-item">
+                <h2>13</h2>
+                <p>Лет опыта</p>
+            </div>
+            <div class="stat-item">
+                <h2>120</h2>
+                <p>Разработчиков</p>
+            </div>
+        </div>
+
+        <a href="#" class="cta-button">GO CRAZY WITH US</a>
+    </div>
+
+    <div class="content-section">
+        <h2>Список элементов</h2>
+        <ul class="items-list">
+            {% for item in items %}
+            <li class="item-card">
+                <img src="" alt="{{ item.name }}">
+                <div class="item-info">
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.description }}</p>
+                    <span class="price">{{ item.price }} ₽</span>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div class="form-section">
+        <h2>Добавить элемент</h2>
+        <form action="/add_item" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Название:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Описание:</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="price">Цена:</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="image_url">URL изображения:</label>
+                <input type="text" id="image_url" name="image_url" required>
+            </div>
+            <button type="submit" class="submit-button">Добавить</button>
+        </form>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
