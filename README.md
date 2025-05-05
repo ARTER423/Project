@@ -23,12 +23,6 @@ pythonProject22/
 
 │   └── README.md            # Информация по деплою
 
-├── docs/                   # Документация
-
-│   ├── deployment.md      # Документация по развертыванию
-
-│   └── operations.md      # Документация по эксплуатации
-
 ├── database.py           # Работа с БД (SqlAlchemy)
 
 ├── main.py               # FastAPI
