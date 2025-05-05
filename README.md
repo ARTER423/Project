@@ -2,14 +2,18 @@
 pythonProject22/  # (или CrazyPanda, если хотите назвать репозиторий также)
 ├── static/                 # Статические файлы (CSS, JavaScript, изображения)
 │   ├── css/
+
 │   │   └── styles.css
 │   ├── js/
+
 │   │   └── script.js
 │   └── images/             # (Рекомендуется для упорядочивания изображений)
+
 │       ├── panda_logo.png
 │       └── background.jpg
 ├── templates/              # Шаблоны Jinja2
 │   └── index.html
+
 ├── deployment/           # Всё для развертывания
 │   ├── environments/          # Конфигурации для разных сред
 │   │   ├── dev/             # Конфигурация для dev
