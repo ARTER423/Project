@@ -1,15 +1,20 @@
 # Project
 pythonProject22/
+
 ├── static/              
 │   ├── css/
 │   │   └── styles.css
+
 │   ├── js/
 │   │   └── script.js
+
 │   └── images/           
 │       ├── panda_logo.png
 │       └── background.jpg
+
 ├── templates/              
 │   └── index.html
+
 ├── deployment/          
 │   ├── environments/        
 │   │   ├── dev/            
