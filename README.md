@@ -32,7 +32,6 @@ pythonProject22/
 │   │   └── prod/      
 
 │   │       └── .env
-
 │   ├── scripts/             
 │   │   ├── install.sh       
 │   │   ├── configure.sh     
